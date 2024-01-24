@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: rgb(58, 0, 0);
+    color: white;
+}
+
+.container{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header, footer{
+    background-color: rgb(19, 0, 0);
+    padding-top: 16px;
+    color: #fff;
+}
+
+header{
+    border-bottom: 5px solid rgb(200, 0, 0);
+}
+
+footer{
+    border-top: 5px solid rgb(200, 0, 0);
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container, footer > .container{
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav{
+    background-color:  rgb(150, 0, 0);
+    padding: 16px 0;
+    display: none;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: Bold;
+    text-transform: uppercase;
+}
+
+nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-hamburguer{
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.container-flex{
+    display: flex;
+}
+
+#sobre{ 
+    background-color: black;
+    border-radius: 0 0 16px 16px;
+}
+#sobre img{
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section{
+    padding: 48px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+section .container{
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.lista-veiculos {
+    flex-wrap: wrap;
+}
+
+.lista-veiculos li{
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 6px;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.lista-veiculos li:hover{
+    border: 2px solid rgb(200, 0, 0);
+}
+
+.lista-veiculos li img{
+    max-width: 100%;
+}
+
+.lista-veiculos li h3{
+    margin: 16px 0;
+}
+
+button{
+    font-family: 'Manrope', sans-serif;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 8px 0;
+    background-color: rgb(200, 0, 0);
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.price{
+    margin: 16px 0;
+    display: block;
+}
+
+.price del{
+    color: #ccc;
+    font-size: 12px;
+}
+
+.price #desconto{
+    background-color: red;
+    font-size: 13px;
+    padding: 0 2px 0 2px;
+    margin-left: 5px;
+}
+
+.item-central{
+    margin: 0 5%;
+}
+
+#contato{
+    background-color: black;
+}
+
+form{
+    max-width: 360px;
+}
+
+.form-campo{
+    margin-bottom: 16px;
+}
+
+.form-campo label{
+    display: block;
+    font-weight: bold;
+}
+
+.form-campo input, .form-campo textarea{
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo input:focus, .form-campo textarea:focus{
+    outline: rgb(200, 0, 0);
+}
+
+.form-campo textarea{
+    resize: none;
+    height: 120px;
+}
+
+form button{
+    max-width: 120px;
+}
+footer li{
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img{
+    height: 32px;
+}
